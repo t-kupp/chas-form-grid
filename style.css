@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Poppins;
+}
+
+html {
+  padding: 20px;
+  height: 100%;
+  background: linear-gradient(135deg, #72b6e5 0%, #9a59b5 100%);
+  background-size: cover;
+}
+
+.main {
+  margin: auto;
+  margin-top: 100px;
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.h1-border {
+  margin-top: -4px;
+  width: 32px;
+  height: 2px;
+  background: linear-gradient(135deg, #72b6e5 0%, #9a59b5 100%);
+  background-size: cover;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 20px;
+}
+
+.input-wrapper > label,
+.radio-wrapper > label {
+  font-weight: 500;
+}
+
+.input-wrapper > input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-wrapper {
+  grid-row: 4;
+}
+
+.radio-options {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-options > div {
+  display: flex;
+}
+
+.radio-options > div > label {
+  padding-left: 3px;
+  font-size: 14px;
+}
+
+.submit {
+  grid-column: span 2;
+  background: linear-gradient(135deg, #72b6e5 0%, #9a59b5 100%);
+  color: white;
+  cursor: pointer;
+  margin: 20px 0;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-top: 0;
+  }
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  .radio-wrapper {
+    grid-row: 6;
+  }
+
+  .submit {
+    grid-column: span 1;
+  }
+}
