@@ -18,10 +18,11 @@ html {
 
 .main {
   margin: auto;
-  margin-top: 100px;
+  margin-top: 60px;
   max-width: 600px;
   background-color: white;
   padding: 20px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -36,7 +37,7 @@ h1 {
 
 .h1-border {
   margin-top: -4px;
-  width: 32px;
+  width: 36px;
   height: 2px;
   background: linear-gradient(135deg, #72b6e5 0%, #9a59b5 100%);
   background-size: cover;
@@ -86,12 +87,23 @@ form {
   font-size: 14px;
 }
 
+.terms-wrapper {
+  display: flex;
+  margin-top: 20px;
+  grid-column: span 2;
+}
+
+.terms-wrapper > label {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
 .submit {
+  border-radius: 4px;
   grid-column: span 2;
   background: linear-gradient(135deg, #72b6e5 0%, #9a59b5 100%);
   color: white;
   cursor: pointer;
-  margin: 20px 0;
   padding: 8px;
   font-size: 16px;
   font-weight: 500;
